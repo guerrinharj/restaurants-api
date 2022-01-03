@@ -12,4 +12,8 @@ class RestaurantPolicy < ApplicationPolicy
   def update?
     record.user == user
   end
+
+  def create?
+    true
+  end
 end
